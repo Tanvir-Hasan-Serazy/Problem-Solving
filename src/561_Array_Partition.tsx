@@ -1,5 +1,5 @@
 function arrayPairSum(nums: number[]): number {
-  let sortedArray = nums.sort();
+  let sortedArray = nums.sort((a, b) => a - b);
   let sum = 0;
   for (let i = 0; i < sortedArray.length - 1; i = i + 2) {
     sum = sum + sortedArray[i];
