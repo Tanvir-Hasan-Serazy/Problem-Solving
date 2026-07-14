@@ -26,3 +26,32 @@ console.log(sortColors(nums));
 
 // const nums = [2, 0, 2, 1, 1, 0];
 // console.log(sortColors(nums));
+
+// function sortColors(nums: number[]): void {
+//   let start = 0;
+//   let mid = 0;
+//   let end = nums.length - 1;
+
+//   while (mid <= end) {
+//     switch (nums[mid]) {
+//       case 0:
+//         [nums[start], nums[mid]] = [nums[mid], nums[start]];
+//         mid++;
+//         start++;
+//         break;
+
+//       case 1:
+//         mid++;
+//         break;
+
+//       case 2:
+//         [nums[mid], nums[end]] = [nums[end], nums[mid]];
+//         end--;
+//         break;
+//     }
+//   }
+//   console.log(nums);
+// }
+
+// const nums = [2, 0, 2, 1, 1, 0];
+// console.log(sortColors(nums));
